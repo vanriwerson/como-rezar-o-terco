@@ -1,0 +1,4 @@
+export const jaculatoria = [
+  "Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno,",
+  "levai as almas todas para o céu e socorrei principalmente as que mais precisarem.",
+] as const;

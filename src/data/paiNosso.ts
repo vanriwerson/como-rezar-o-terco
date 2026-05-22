@@ -1,0 +1,10 @@
+export const paiNosso = [
+  "Pai nosso que estais no céu, santificado seja o vosso nome",
+  "venha a nós o vosso reino",
+  "seja feita a vossa vontade, assim na terra como no céu.",
+  "O pão nosso de cada dia nos dai hoje",
+  "perdoai-nos as nossas ofensas,",
+  "assim como nós perdoamos a quem nos tem ofendido",
+  "e não nos deixeis cair em tentação, mas livrai-nos do mal.",
+  "Amém.",
+] as const;
