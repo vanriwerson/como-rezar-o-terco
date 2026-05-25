@@ -10,7 +10,7 @@ export { salveRainha } from "./salveRainha";
 export { sinalDaCruz } from "./sinalDaCruz";
 
 export { DIAS_DA_SEMANA, type DiaDaSemana } from "./constants/DiasDaSemana";
-export { TIPOS_TERCO, type TipoTerco } from "./constants/TiposTerco";
+export { TITULOS_TERCO, type TituloTerco } from "./constants/TitulosTerco";
 
 export { misteriosDolorosos } from "./tercos/misteriosDolorosos";
 export { misteriosGloriosos } from "./tercos/misteriosGloriosos";
