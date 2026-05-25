@@ -1,19 +1,24 @@
-export const credo = [
-  "Creio em Deus Pai, todo-poderoso, criador do céu e da terra",
-  "e em Jesus Cristo, seu único Filho, nosso Senhor,",
-  "que foi concebido pelo poder do Espírito Santo,",
-  "nasceu da Virgem Maria,",
-  "padeceu sob Pôncio Pilatos,",
-  "foi crucificado, morto e sepultado,",
-  "desceu à mansão dos mortos,",
-  "ressuscitou ao terceiro dia, subiu aos céus,",
-  "está sentado à direita de Deus Pai Todo-poderoso,",
-  "de onde há de vir a julgar os vivos e os mortos.",
-  "Creio no Espírito Santo,",
-  "na santa Igreja Católica,",
-  "na comunhão dos santos,",
-  "na remissão dos pecados,",
-  "na ressurreição da carne,",
-  "na vida eterna.",
-  "Amém.",
-] as const;
+import type { Oracao } from "../interfaces";
+
+export const credo: Oracao = {
+  titulo: "credo",
+  texto: [
+    "Creio em Deus Pai, todo-poderoso, criador do céu e da terra",
+    "e em Jesus Cristo, seu único Filho, nosso Senhor,",
+    "que foi concebido pelo poder do Espírito Santo,",
+    "nasceu da Virgem Maria,",
+    "padeceu sob Pôncio Pilatos,",
+    "foi crucificado, morto e sepultado,",
+    "desceu à mansão dos mortos,",
+    "ressuscitou ao terceiro dia, subiu aos céus,",
+    "está sentado à direita de Deus Pai Todo-poderoso,",
+    "de onde há de vir a julgar os vivos e os mortos.",
+    "Creio no Espírito Santo,",
+    "na santa Igreja Católica,",
+    "na comunhão dos santos,",
+    "na remissão dos pecados,",
+    "na ressurreição da carne,",
+    "na vida eterna.",
+    "Amém.",
+  ],
+};

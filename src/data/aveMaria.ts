@@ -1,9 +1,14 @@
-export const aveMaria = [
-  "Ave Maria, cheia de graça, o Senhor é convosco;",
-  "bendita sois vós entre as mulheres,",
-  "e bendito é o fruto do vosso ventre, Jesus.",
-  "Santa Maria, Mãe de Deus,",
-  "rogai por nós, pecadores,",
-  "agora e na hora de nossa morte.",
-  "Amém.",
-] as const;
+import type { Oracao } from "../interfaces";
+
+export const aveMaria: Oracao = {
+  titulo: "Ave Maria",
+  texto: [
+    "Ave Maria, cheia de graça, o Senhor é convosco;",
+    "bendita sois vós entre as mulheres,",
+    "e bendito é o fruto do vosso ventre, Jesus.",
+    "Santa Maria, Mãe de Deus,",
+    "rogai por nós, pecadores,",
+    "agora e na hora de nossa morte.",
+    "Amém.",
+  ],
+};
