@@ -1,17 +1,26 @@
 :root {
-  /* 🎨 Paleta principal (inspirada no terço dos homens) */
-  --text: #374151; /* cinza azulado */
-  --text-h: #0f172a; /* azul bem escuro */
+  --text: #374151;
+  --text-h: #0f172a;
   --bg: #ffefc3;
+  --gradient-bg: linear-gradient(
+    135deg,
+    var(--gold) 0%,
+    var(--bg) 1%,
+    var(--code-bg) 30%,
+    var(--code-bg) 70%,
+    var(--bg) 99%,
+    var(--gold) 100%
+  );
+
   --border: #e5e7eb;
 
-  --code-bg: #f3efe6; /* tom de papel/cartilha */
+  --code-bg: #f3efe6;
 
-  --accent: #1e3a8a; /* azul principal */
+  --accent: #1e3a8a;
   --accent-bg: rgba(30, 58, 138, 0.1);
   --accent-border: rgba(30, 58, 138, 0.35);
 
-  --gold: #d4af37; /* dourado litúrgico */
+  --gold: #d4af37;
   --gold-soft: rgba(212, 175, 55, 0.15);
 
   --social-bg: rgba(243, 239, 230, 0.6);
@@ -19,7 +28,6 @@
   --shadow:
     rgba(0, 0, 0, 0.08) 0 10px 15px -3px, rgba(0, 0, 0, 0.04) 0 4px 6px -2px;
 
-  /* 🧵 Tipografia */
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
@@ -27,7 +35,7 @@
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color: var(--text);
-  background: var(--bg);
+  background: var(--gradient-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -40,7 +48,6 @@
 }
 
 #root {
-  width: 1126px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -53,7 +60,9 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--gradient-bg);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1,
