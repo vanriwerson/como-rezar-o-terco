@@ -1,7 +1,7 @@
 import type { Oracao } from "../interfaces";
 
 export const credo: Oracao = {
-  titulo: "credo",
+  titulo: "Credo",
   texto: [
     "Creio em Deus Pai, todo-poderoso, criador do céu e da terra",
     "e em Jesus Cristo, seu único Filho, nosso Senhor,",

@@ -7,4 +7,4 @@ export const TITULOS_TERCO = {
     "Contemplação dos Mistérios Luminosos da Luz e dos ensinamentos de Jesus",
 } as const;
 
-export type TipoTerco = (typeof TITULOS_TERCO)[keyof typeof TITULOS_TERCO];
+export type TituloTerco = (typeof TITULOS_TERCO)[keyof typeof TITULOS_TERCO];
