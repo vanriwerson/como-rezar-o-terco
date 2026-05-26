@@ -1,0 +1,50 @@
+.ave-maria-counter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.ave-maria-counter-title {
+  color: var(--text-h);
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ave-maria-counter-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.ave-maria-bead {
+  aspect-ratio: 1;
+
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: var(--gold);
+
+  border: 1px solid var(--accent-border);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.ave-maria-bead:hover {
+  transform: scale(1.05);
+}
+
+.ave-maria-bead.checked {
+  background: var(--accent);
+  color: #ffffff;
+}
