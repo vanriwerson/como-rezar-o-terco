@@ -1,0 +1,86 @@
+.credits-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.credits-header {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.credits-header svg {
+  color: var(--gold);
+}
+
+.credits-header p {
+  max-width: 620px;
+
+  line-height: 180%;
+}
+
+.credits-card {
+  display: flex;
+  gap: 20px;
+
+  text-align: left;
+}
+
+.credits-card-icon {
+  width: 56px;
+  height: 56px;
+
+  min-width: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: rgba(212, 175, 55, 0.08);
+
+  color: var(--gold);
+}
+
+.credits-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.credits-card-content p {
+  line-height: 180%;
+}
+
+.credits-card-content a {
+  width: fit-content;
+
+  font-weight: 600;
+}
+
+.credits-card-content a:last-child {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  height: fit-content;
+}
+
+.credits-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .credits-card {
+    flex-direction: column;
+  }
+}
