@@ -1,0 +1,21 @@
+.misterio-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.misterio-stepper button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.misterio-progress {
+  color: var(--text);
+
+  font-size: 14px;
+  font-weight: 600;
+}
