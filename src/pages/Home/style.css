@@ -1,0 +1,75 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.home-icon {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  background: var(--gold-soft);
+
+  color: var(--gold);
+}
+
+.prayer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  text-align: left;
+}
+
+.prayer-card p {
+  line-height: 180%;
+}
+
+.home-start-button {
+  margin-top: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  align-self: center;
+
+  padding: 14px 24px;
+
+  border-radius: 999px;
+
+  background: var(--accent);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  box-shadow: var(--shadow);
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.home-start-button:hover {
+  transform: translateY(-2px);
+}
