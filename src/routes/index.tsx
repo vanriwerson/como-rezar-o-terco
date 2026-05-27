@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
 import { MainLayout, CleanLayout } from "../layouts";
 
 import { Creditos, Home, RitosFinais, TercoDoRosario } from "../pages";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <MainLayout />,
