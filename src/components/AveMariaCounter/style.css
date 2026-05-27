@@ -16,7 +16,7 @@
 .ave-maria-bead {
   align-items: center;
   appearance: none;
-  background: #ffffff;
+  background: var(--light-bg);
   border: 1px solid var(--accent-border);
   border-radius: 999px;
   box-shadow: none;
@@ -36,7 +36,7 @@
 
 .ave-maria-bead.checked {
   background: var(--accent);
-  color: #ffffff;
+  color: var(--light-bg);
 }
 
 @media (min-width: 768px) {

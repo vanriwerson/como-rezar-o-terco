@@ -57,7 +57,7 @@
 
   background: var(--accent);
 
-  color: #ffffff;
+  color: var(--light-bg);
 
   text-decoration: none;
 

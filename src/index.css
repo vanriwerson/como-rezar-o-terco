@@ -1,6 +1,7 @@
 :root {
   --text: #374151;
   --text-h: #0f172a;
+  --light-bg: #f9fafb;
   --bg: #ffefc3;
   --gradient-bg: linear-gradient(
     135deg,
@@ -118,7 +119,7 @@ button {
   border-radius: 8px;
   border: 1px solid var(--accent-border);
   background: var(--accent);
-  color: #ffffff;
+  color: var(--light-bg);
   padding: 10px 16px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -140,7 +141,7 @@ button:hover {
 }
 
 .card {
-  background: #ffffff;
+  background: var(--light-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 16px;

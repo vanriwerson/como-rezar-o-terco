@@ -33,7 +33,7 @@
 .clean-layout h1,
 .clean-layout h2,
 .clean-layout h3 {
-  color: #ffffff;
+  color: var(--light-bg);
 }
 
 .clean-layout p {
