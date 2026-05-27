@@ -17,30 +17,14 @@ import {
   MisterioCard,
   MisterioStepper,
 } from "../../components";
+import { getTercoByRota } from "../../helpers";
 
 export default function TercoDoRosario() {
   const { tipo } = useParams();
 
   const [currentMisterio, setCurrentMisterio] = useState(0);
 
-  const terco = useMemo<TercoDoRosario | undefined>(() => {
-    switch (tipo) {
-      case "gozosos":
-        return misteriosGozosos;
-
-      case "dolorosos":
-        return misteriosDolorosos;
-
-      case "gloriosos":
-        return misteriosGloriosos;
-
-      case "luminosos":
-        return misteriosLuminosos;
-
-      default:
-        return undefined;
-    }
-  }, [tipo]);
+  const terco = getTercoByRota(tipo!);
 
   useEffect(() => {
     window.scrollTo({
