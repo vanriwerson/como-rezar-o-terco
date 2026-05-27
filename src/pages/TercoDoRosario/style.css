@@ -15,8 +15,10 @@
   text-align: center;
 }
 
-.terco-badge {
+.terco-title {
   align-items: center;
+  border-bottom: 1px solid var(--gold);
+  border-top: 1px solid var(--gold);
   color: var(--accent);
   display: inline-flex;
   font-size: 14px;
@@ -30,10 +32,8 @@
 .terco-days {
   color: var(--text);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   opacity: 0.75;
-  letter-spacing: 0.2px;
-  margin: 0;
 }
 
 @media (min-width: 768px) {

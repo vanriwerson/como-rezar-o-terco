@@ -47,9 +47,9 @@ export default function TercoDoRosario() {
   return (
     <section className="terco">
       <div className="terco-header">
-        <span className="terco-badge">{terco.titulo}</span>
+        <span className="terco-title">{terco.titulo}</span>
 
-        <p className="terco-days">{terco.diasDaSemana.join(", ")}</p>
+        <p className="terco-days">{`( ${terco.diasDaSemana.join(", ")} )`}</p>
       </div>
 
       <MisterioCard misterio={misterio} />
