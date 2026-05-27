@@ -6,22 +6,17 @@
   margin-top: 24px;
 }
 
-.ave-maria-counter-title {
-  color: var(--text-h);
-
-  font-size: 15px;
-  font-weight: 600;
-}
-
 .ave-maria-counter-items {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
   gap: 12px;
 }
 
 .ave-maria-bead {
   aspect-ratio: 1;
-
+  height: fit-content;
+  width: fit-content;
   border-radius: 999px;
 
   display: flex;
@@ -47,4 +42,10 @@
 .ave-maria-bead.checked {
   background: var(--accent);
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .ave-maria-counter-items {
+    grid-template-columns: repeat(10, auto);
+  }
 }

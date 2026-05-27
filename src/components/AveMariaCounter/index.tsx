@@ -3,6 +3,8 @@ import { useState } from "react";
 import { IconRosetteFilled } from "@tabler/icons-react";
 
 import "./style.css";
+import { aveMaria } from "../../data";
+import OracaoAccordion from "../OracaoAccordion";
 
 export default function AveMariaCounter() {
   const [checked, setChecked] = useState<boolean[]>(Array(10).fill(false));
@@ -17,7 +19,7 @@ export default function AveMariaCounter() {
 
   return (
     <section className="ave-maria-counter">
-      <p className="ave-maria-counter-title">Ave, Maria! Cheia de graça...</p>
+      <OracaoAccordion oracao={aveMaria} />
 
       <div className="ave-maria-counter-items">
         {checked.map((item, index) => (
