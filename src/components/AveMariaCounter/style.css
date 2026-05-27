@@ -14,25 +14,20 @@
 }
 
 .ave-maria-bead {
-  aspect-ratio: 1;
-  height: fit-content;
-  width: fit-content;
-  border-radius: 999px;
-
-  display: flex;
   align-items: center;
-  justify-content: center;
-
+  appearance: none;
   background: #ffffff;
-
-  color: var(--gold);
-
   border: 1px solid var(--accent-border);
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    color 0.2s ease;
+  border-radius: 999px;
+  box-shadow: none;
+  color: var(--gold);
+  cursor: pointer;
+  display: flex;
+  height: 56px;
+  justify-content: center;
+  margin: 0;
+  transition: all 0.2s ease;
+  width: 56px;
 }
 
 .ave-maria-bead:hover {

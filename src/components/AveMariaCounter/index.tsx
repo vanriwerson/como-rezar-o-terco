@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { IconRosetteFilled } from "@tabler/icons-react";
+import { IconFlowerFilled } from "@tabler/icons-react";
 
 import "./style.css";
 import { aveMaria } from "../../data";
@@ -23,15 +23,14 @@ export default function AveMariaCounter() {
 
       <div className="ave-maria-counter-items">
         {checked.map((item, index) => (
-          <button
+          <span
             key={index}
-            type="button"
             className={`ave-maria-bead ${item ? "checked" : ""}`}
             onClick={() => toggle(index)}
             aria-label={`${index + 1}ªAve Maria`}
           >
-            <IconRosetteFilled size={20} />
-          </button>
+            <IconFlowerFilled size={20} />
+          </span>
         ))}
       </div>
     </section>
