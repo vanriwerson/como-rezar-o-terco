@@ -8,10 +8,9 @@ import {
   OracaoAccordion,
 } from "../../components";
 
-import { getTercoByRota } from "../../helpers";
-import type { TercoDoRosario } from "../../interfaces";
-import "./style.css";
 import { paiNosso } from "../../data";
+import { getTercoByRota } from "../../helpers";
+import "./style.css";
 
 const SCROLL_OFFSET_TOP = 160;
 
@@ -50,14 +49,14 @@ export default function TercoDoRosario() {
       <div className="terco-header">
         <span className="terco-badge">{terco.titulo}</span>
 
-        <p className="terco-days">{`(${terco.diasDaSemana.join(", ")})`}</p>
+        <p className="terco-days">{terco.diasDaSemana.join(", ")}</p>
       </div>
 
       <MisterioCard misterio={misterio} />
 
       <OracaoAccordion oracao={paiNosso} />
 
-      <AveMariaCounter />
+      <AveMariaCounter key={currentMisterio} />
 
       <MisterioStepper
         current={currentMisterio + 1}

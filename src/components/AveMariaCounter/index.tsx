@@ -1,10 +1,8 @@
 import { useState } from "react";
-
 import { IconFlowerFilled } from "@tabler/icons-react";
-
-import "./style.css";
 import { aveMaria } from "../../data";
 import OracaoAccordion from "../OracaoAccordion";
+import "./style.css";
 
 export default function AveMariaCounter() {
   const [checked, setChecked] = useState<boolean[]>(Array(10).fill(false));
@@ -25,9 +23,10 @@ export default function AveMariaCounter() {
         {checked.map((item, index) => (
           <span
             key={index}
+            role="button"
             className={`ave-maria-bead ${item ? "checked" : ""}`}
             onClick={() => toggle(index)}
-            aria-label={`${index + 1}ªAve Maria`}
+            aria-label={`${index + 1}ª Ave Maria`}
           >
             <IconFlowerFilled size={20} />
           </span>
