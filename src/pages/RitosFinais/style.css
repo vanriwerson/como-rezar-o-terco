@@ -1,0 +1,23 @@
+.final-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.final-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.final-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--gold);
+}
