@@ -1,5 +1,6 @@
-import { DIAS_DA_SEMANA, TITULOS_TERCO } from "../";
+import { DIAS_DA_SEMANA } from "../constants/DiasDaSemana";
 import { ilustracoes } from "../../assets";
+import { TITULOS_TERCO } from "../constants/TitulosTerco";
 import type { TercoDoRosario } from "../../interfaces";
 
 export const misteriosGozosos: TercoDoRosario = {
