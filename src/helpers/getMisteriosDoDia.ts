@@ -1,23 +1,10 @@
-import {
-  misteriosDolorosos,
-  misteriosGloriosos,
-  misteriosGozosos,
-  misteriosLuminosos,
-  type DiaDaSemana,
-} from "../data";
+import { TERCOS_DO_ROSARIO, type DiaDaSemana } from "../data";
 import { getDiaDaSemana } from "./getDiaDaSemana";
 
 export function getMisteriosDoDia() {
   const diaAtual = getDiaDaSemana();
 
-  const tercos = [
-    misteriosGozosos,
-    misteriosDolorosos,
-    misteriosGloriosos,
-    misteriosLuminosos,
-  ];
-
-  const tercoDoDia = tercos.find((terco) =>
+  const tercoDoDia = TERCOS_DO_ROSARIO.find((terco) =>
     terco.diasDaSemana.includes(diaAtual as DiaDaSemana),
   );
 
