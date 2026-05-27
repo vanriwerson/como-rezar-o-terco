@@ -1,0 +1,1 @@
+export { getMisteriosDoDia } from "./getMisteriosDoDia";

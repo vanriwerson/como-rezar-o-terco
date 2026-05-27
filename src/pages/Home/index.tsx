@@ -13,6 +13,7 @@ import {
   aveMaria,
 } from "../../data";
 import type { Oracao } from "../../interfaces";
+import { getMisteriosDoDia } from "../../helpers";
 
 export default function Home() {
   const oracoesIniciais: Oracao[] = [
@@ -21,6 +22,8 @@ export default function Home() {
     oferecimento,
     credo,
   ];
+
+  const tercoDoDia = getMisteriosDoDia();
 
   return (
     <section className="home-page">
@@ -50,7 +53,7 @@ export default function Home() {
 
       <OracaoAccordion oracao={aveMaria} />
 
-      <Link to="/misterios/gozosos" className="home-start-button">
+      <Link to={`/misterios/${tercoDoDia!.rota}`} className="home-start-button">
         Iniciar Mistérios
         <IconChevronRight size={18} />
       </Link>
