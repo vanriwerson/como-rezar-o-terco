@@ -21,10 +21,11 @@
   border-top: 1px solid var(--gold);
   color: var(--accent);
   display: inline-flex;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   justify-content: center;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
   padding: 8px;
   text-transform: uppercase;
 }
