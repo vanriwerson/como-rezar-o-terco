@@ -1,0 +1,60 @@
+.terco {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  box-sizing: border-box;
+
+  padding: 20px 16px 48px;
+}
+
+.terco-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.terco-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  background: var(--accent-bg);
+
+  border: 1px solid var(--accent-border);
+
+  color: var(--accent);
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.terco-days {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 15px;
+  line-height: 150%;
+}
+
+@media (min-width: 768px) {
+  .terco {
+    padding: 32px 32px 64px;
+    gap: 32px;
+  }
+
+  .terco-days {
+    font-size: 16px;
+  }
+}

@@ -5,4 +5,5 @@ export { default as MisterioCard } from "./MisterioCard";
 export { default as MisterioStepper } from "./MisterioStepper";
 export { default as OracaoAccordion } from "./OracaoAccordion";
 export { default as PageTitle } from "./PageTitle";
+export { default as ScrollToTop } from "./ScrollToTop";
 export { default as SectionTitle } from "./SectionTitle";
