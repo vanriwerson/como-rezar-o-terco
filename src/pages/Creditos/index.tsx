@@ -3,7 +3,10 @@ import {
   IconBrush,
   IconBook,
   IconHeartHandshake,
+  IconArrowLeft,
 } from "@tabler/icons-react";
+
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -61,6 +64,11 @@ export default function Creditos() {
           Aplicação desenvolvida com o intuito de encorajar e auxiliar na reza
           diária do Santo Terço. Não tem fins lucrativos.
         </p>
+
+        <Link className="credits-back-button" to="/">
+          <IconArrowLeft size={18} />
+          Voltar ao início
+        </Link>
       </div>
     </section>
   );
