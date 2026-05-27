@@ -1,23 +1,17 @@
-import { useEffect, useMemo, useState } from "react";
-
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import {
-  misteriosDolorosos,
-  misteriosGloriosos,
-  misteriosGozosos,
-  misteriosLuminosos,
-} from "../../data";
-
-import type { TercoDoRosario } from "../../interfaces";
-
-import "./style.css";
 import {
   AveMariaCounter,
   MisterioCard,
   MisterioStepper,
+  OracaoAccordion,
 } from "../../components";
+
 import { getTercoByRota } from "../../helpers";
+import type { TercoDoRosario } from "../../interfaces";
+import "./style.css";
+import { paiNosso } from "../../data";
 
 export default function TercoDoRosario() {
   const { tipo } = useParams();
@@ -50,16 +44,16 @@ export default function TercoDoRosario() {
   }
 
   return (
-    <section className="terco-page">
-      <div className="terco-page-header">
-        <span className="terco-page-badge">{terco.titulo}</span>
+    <section className="terco">
+      <div className="terco-header">
+        <span className="terco-badge">{terco.titulo}</span>
 
-        <p className="terco-page-days">
-          {`(${terco.diasDaSemana.join(", ")})`}
-        </p>
+        <p className="terco-days">{`(${terco.diasDaSemana.join(", ")})`}</p>
       </div>
 
       <MisterioCard misterio={misterio} />
+
+      <OracaoAccordion oracao={paiNosso} />
 
       <AveMariaCounter />
 
