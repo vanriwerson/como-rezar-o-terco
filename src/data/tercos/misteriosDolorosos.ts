@@ -4,6 +4,7 @@ import { DIAS_DA_SEMANA, TITULOS_TERCO } from "..";
 export const misteriosDolorosos: TercoDoRosario = {
   titulo: TITULOS_TERCO.DOLOROSOS,
   diasDaSemana: [DIAS_DA_SEMANA.TERCA, DIAS_DA_SEMANA.SEXTA],
+  rota: "dolorosos",
   misterios: [
     {
       id: 1,

@@ -5,6 +5,7 @@ import type { TercoDoRosario } from "../../interfaces";
 export const misteriosGozosos: TercoDoRosario = {
   titulo: TITULOS_TERCO.GOZOSOS,
   diasDaSemana: [DIAS_DA_SEMANA.SEGUNDA, DIAS_DA_SEMANA.SABADO],
+  rota: "gozosos",
   misterios: [
     {
       id: 1,

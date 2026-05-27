@@ -3,6 +3,7 @@ import { DIAS_DA_SEMANA, TITULOS_TERCO } from "../";
 
 export const misteriosLuminosos: TercoDoRosario = {
   titulo: TITULOS_TERCO.LUMINOSOS,
+  rota: "luminosos",
   diasDaSemana: [DIAS_DA_SEMANA.QUINTA],
   misterios: [
     {
