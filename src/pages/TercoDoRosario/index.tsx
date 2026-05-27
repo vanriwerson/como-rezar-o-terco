@@ -13,6 +13,8 @@ import type { TercoDoRosario } from "../../interfaces";
 import "./style.css";
 import { paiNosso } from "../../data";
 
+const SCROLL_OFFSET_TOP = 160;
+
 export default function TercoDoRosario() {
   const { tipo } = useParams();
 
@@ -22,7 +24,7 @@ export default function TercoDoRosario() {
 
   useEffect(() => {
     window.scrollTo({
-      top: 0,
+      top: SCROLL_OFFSET_TOP,
       behavior: "smooth",
     });
   }, [currentMisterio]);
