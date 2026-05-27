@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
-import { IconChevronRight, IconCrossFilled } from "@tabler/icons-react";
+import {
+  IconChevronRight,
+  IconCross,
+  IconSparkleHighlight,
+} from "@tabler/icons-react";
 
 import "./style.css";
 import { OracaoAccordion, SectionTitle } from "../../components";
@@ -28,7 +32,7 @@ export default function Home() {
   return (
     <section className="home-page">
       <SectionTitle
-        icon={<IconCrossFilled size={36} />}
+        icon={<IconSparkleHighlight size={36} />}
         title="Ritos Iniciais"
       />
 
@@ -37,7 +41,7 @@ export default function Home() {
       ))}
 
       <SectionTitle
-        icon={<IconCrossFilled size={36} />}
+        icon={<IconCross size={36} />}
         title="Um Pai-Nosso e 3 Ave-Marias em honra à Santíssima Trindade"
       />
 
