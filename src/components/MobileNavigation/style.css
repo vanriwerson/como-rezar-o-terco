@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+  .navigation-desktop {
+    display: none;
+  }
+
+  .navigation-mobile {
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background: var(--code-bg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+
+  .navigation-menu-button {
+    align-items: center;
+    background-color: var(--accent-bg);
+    border-radius: 14px;
+    color: var(--accent);
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    padding: 0;
+    width: 48px;
+    border: 1px solid var(--accent-border);
+    box-shadow: none;
+  }
+
+  .navigation-overlay {
+    animation: fade-in 0.1s ease;
+    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.3);
+    inset: 0;
+    position: fixed;
+    z-index: 49;
+  }
+
+  .navigation-drawer {
+    animation: drawer-slide-in 0.3s ease;
+    backdrop-filter: blur(18px);
+    background:
+      linear-gradient(135deg, var(--light-bg) 0%, var(--code-bg) 70%),
+      var(--gold-soft) 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 50;
+  }
+
+  .navigation-drawer-header {
+    border-bottom: 1px solid var(--gold);
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px;
+  }
+
+  .navigation-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px 24px;
+  }
+
+  .navigation-links a {
+    border-radius: 18px;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-align: left;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+    width: 100%;
+  }
+
+  .navigation-links a:active {
+    transform: scale(0.98);
+  }
+
+  .navigation-links a.active {
+    background: var(--accent);
+
+    color: #ffffff;
+  }
+}
+
+/* =========================
+ANIMAÇÕES
+========================= */
+
+@keyframes drawer-slide-in {
+  from {
+    opacity: 0;
+
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
