@@ -26,8 +26,8 @@ export default function Creditos() {
         <div className="credits-card-content">
           <h2>Artes e Ilustrações</h2>
           <p>
-            Todas as artes de de contemplação dos mistérios foram produzidas
-            pela minha irmã Jéssica especialmente para este projeto.
+            Todas as artes de contemplação dos mistérios foram produzidas pela
+            minha irmã Jéssica especialmente para este projeto.
           </p>
 
           <a
@@ -51,7 +51,7 @@ export default function Creditos() {
 
           <p>
             As orações e textos para meditação dos mistérios foram retirados do
-            livro "Roteiro Religioso Mariano - Terço dos Homens -Mãe Rainha",
+            livro "Roteiro Religioso Mariano - Terço dos Homens - Mãe Rainha",
             feito por Cleber Carlos Miranda.
           </p>
         </div>
