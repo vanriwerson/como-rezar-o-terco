@@ -3,6 +3,9 @@ import { ilustracoes } from "../../assets";
 import { TITULOS_TERCO } from "../constants/TitulosTerco";
 import type { TercoDoRosario } from "../../interfaces";
 
+const { anunciacao, visitacao, nascimento, apresentacao } =
+  ilustracoes.misteriosGozosos;
+
 export const misteriosGozosos: TercoDoRosario = {
   titulo: TITULOS_TERCO.GOZOSOS,
   diasDaSemana: [DIAS_DA_SEMANA.SEGUNDA, DIAS_DA_SEMANA.SABADO],
@@ -11,7 +14,7 @@ export const misteriosGozosos: TercoDoRosario = {
     {
       id: 1,
       titulo: "Anunciação do Anjo e Encarnação do Verbo",
-      imagem: ilustracoes.misteriosGozosos.anunciacao,
+      imagem: anunciacao,
       texto: [
         "Quando Isabel estava no sexto mês, o anjo Gabriel foi enviado por Deus a uma cidade da Galiléia chamada Nazaré, a uma virgem prometida em casamento a um homem de nome José, da casa de Davi.",
         "A virgem se chamava Maria. O anjo entrou onde ela estava e disse: 'Alegra-te, cheia de graça! O Senhor é contigo!' Ela perturbou-se com estas palavras e começou a pensar qual seria o significado da saudação.",
@@ -22,7 +25,7 @@ export const misteriosGozosos: TercoDoRosario = {
     {
       id: 2,
       titulo: "Visitação de Maria Santíssima à Santa Isabel",
-      imagem: ilustracoes.misteriosGozosos.visitacao,
+      imagem: visitacao,
       texto: [
         "Maria entrou na casa de Zacarias e saudou Isabel. Quando Isabel ouviu a saudação de Maria, a criança pulou de alegria em seu ventre, e Isabel ficou repleta do Espírito Santo.",
         "Com voz forte, ela exclamou: 'Bendita és tu entre as mulheres, e bendito é o fruto do teu ventre! Como mereço que a mãe do meu Senhor venha me visitar?'",
@@ -32,7 +35,7 @@ export const misteriosGozosos: TercoDoRosario = {
     {
       id: 3,
       titulo: "Nascimento do Menino Jesus em Belém",
-      imagem: ilustracoes.misteriosGozosos.nascimento,
+      imagem: nascimento,
       texto: [
         "Maria deu à luz o seu filho primogênito, envolveu-o em faixas e  deitou-o numa manjedoura, porque não havia lugar para eles na hospedaria.",
       ],
@@ -41,7 +44,7 @@ export const misteriosGozosos: TercoDoRosario = {
     {
       id: 4,
       titulo: "Apresentação do menino Jesus no Templo e a purificação de Maria",
-      imagem: "",
+      imagem: apresentacao,
       texto: [
         "E quando se completaram os dias para a purificação, segundo a lei de Moisés, levaram o menino a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na lei do senhor:",
         "'Todo primogênito do sexo masculino será consagrado ao Senhor.' Para tanto, deviam oferecer em sacrifício - um par de rolas ou dois pombinhos - como está escrito na Lei do Senhor.",
