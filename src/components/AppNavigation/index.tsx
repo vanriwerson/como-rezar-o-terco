@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import "./style.css";
 import MobileNavigation from "../MobileNavigation";
+import { MISTERIOS_NAVIGATION_ITEMS } from "../../data";
 
 export default function AppNavigation() {
   return (
@@ -9,13 +10,11 @@ export default function AppNavigation() {
       <nav className="navigation-desktop">
         <NavLink to="/">Ritos Iniciais</NavLink>
 
-        <NavLink to="/misterios/gozosos">Gozosos</NavLink>
-
-        <NavLink to="/misterios/dolorosos">Dolorosos</NavLink>
-
-        <NavLink to="/misterios/gloriosos">Gloriosos</NavLink>
-
-        <NavLink to="/misterios/luminosos">Luminosos</NavLink>
+        {MISTERIOS_NAVIGATION_ITEMS.map((item) => (
+          <NavLink key={item.to} to={item.to}>
+            {item.label}
+          </NavLink>
+        ))}
 
         <NavLink to="/finais">Ritos Finais</NavLink>
       </nav>

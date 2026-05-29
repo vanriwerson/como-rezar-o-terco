@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
 import "./style.css";
+import { MISTERIOS_NAVIGATION_ITEMS } from "../../data";
 
 export default function MobileNavigation() {
   const [open, setOpen] = useState(false);
@@ -19,8 +20,7 @@ export default function MobileNavigation() {
         <button
           aria-label="Abrir menu"
           className="navigation-menu-button"
-          onClick={() => setOpen((previous) => !previous)}
-          type="button"
+          onClick={() => setOpen(true)}
         >
           <IconMenu2 size={24} />
         </button>
@@ -43,29 +43,30 @@ export default function MobileNavigation() {
             </div>
 
             <div className="navigation-links">
-              <NavLink to="/" onClick={closeMenu}>
-                Ritos Iniciais
-              </NavLink>
+              <div className="navigation-section">
+                <span className="navigation-section-title">Mistérios</span>
 
-              <NavLink to="/misterios/gozosos" onClick={closeMenu}>
-                Gozosos
-              </NavLink>
+                <div className="navigation-sub-links">
+                  {MISTERIOS_NAVIGATION_ITEMS.map((item) => (
+                    <NavLink key={item.to} to={item.to} onClick={closeMenu}>
+                      {item.icon}
+                      {item.label}
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
 
-              <NavLink to="/misterios/dolorosos" onClick={closeMenu}>
-                Dolorosos
-              </NavLink>
+              <div className="footer-divider" />
 
-              <NavLink to="/misterios/gloriosos" onClick={closeMenu}>
-                Gloriosos
-              </NavLink>
+              <div className="navigation-section">
+                <NavLink to="/" onClick={closeMenu}>
+                  Ritos Iniciais
+                </NavLink>
 
-              <NavLink to="/misterios/luminosos" onClick={closeMenu}>
-                Luminosos
-              </NavLink>
-
-              <NavLink to="/finais" onClick={closeMenu}>
-                Ritos Finais
-              </NavLink>
+                <NavLink to="/finais" onClick={closeMenu}>
+                  Ritos Finais
+                </NavLink>
+              </div>
             </div>
           </aside>
         </>
