@@ -12,6 +12,7 @@ export { sinalDaCruz } from "./sinalDaCruz";
 export { DIAS_DA_SEMANA, type DiaDaSemana } from "./constants/DiasDaSemana";
 export { TERCOS_DO_ROSARIO } from "./constants/TercosDoRosario";
 export { TITULOS_TERCO, type TituloTerco } from "./constants/TitulosTerco";
+export { MISTERIOS_NAVIGATION_ITEMS } from "./constants/NavigationItems";
 
 export { misteriosDolorosos } from "./tercos/misteriosDolorosos";
 export { misteriosGloriosos } from "./tercos/misteriosGloriosos";
