@@ -1,6 +1,9 @@
 import { DIAS_DA_SEMANA } from "../constants/DiasDaSemana";
 import { TITULOS_TERCO } from "../constants/TitulosTerco";
 import type { TercoDoRosario } from "../../interfaces";
+import { ilustracoes } from "../../assets";
+
+const { agonia, flagelacao } = ilustracoes.misteriosDolorosos;
 
 export const misteriosDolorosos: TercoDoRosario = {
   titulo: TITULOS_TERCO.DOLOROSOS,
@@ -10,7 +13,7 @@ export const misteriosDolorosos: TercoDoRosario = {
     {
       id: 1,
       titulo: "A Agonia de Jesus no Horto das Oliveiras",
-      imagem: "",
+      imagem: agonia,
       texto: [
         "Chegaram a uma propriedade chamada Getsêmani, e Jesus disse aos seus discípulos: 'Setai-vos aqui enquanto eu vou orar.' Levou consigo Pedro, Tiago e João, e começou a sentir pavor e angústia.",
         "Jesus, então, lhes disse: 'Sinto uma tristeza mortal! Ficai aqui e vigiai!' Jesus foi um pouco mais adiante, caiu por terra e orava para que aquela hora, se fosse possível, passasse dele.",
@@ -21,7 +24,7 @@ export const misteriosDolorosos: TercoDoRosario = {
     {
       id: 2,
       titulo: "A Flagelação de Jesus",
-      imagem: "",
+      imagem: flagelacao,
       texto: [
         "Pilatos disse: 'Então, tu és rei?' Jesus respondeu: 'Tu dizes que sou rei. Eu nasci e vim ao mundo para isto: para dar testemunho da verdade. Todo aquele que é da verdade escuta a minha voz.'",
         "Pilatos lhe disse: 'Que é a verdade?' Dito isso, saiu ao encontro dos judeus e declarou: 'Eu não encontro nele nenhum motivo de condenação. Mas existe entre vós um costume de que, por ocasião da Páscoa, eu vos solte um preso. Quereis que eu vos solte o rei dos judeus?'",

@@ -3,7 +3,7 @@ import { ilustracoes } from "../../assets";
 import { TITULOS_TERCO } from "../constants/TitulosTerco";
 import type { TercoDoRosario } from "../../interfaces";
 
-const { anunciacao, visitacao, nascimento, apresentacao } =
+const { anunciacao, visitacao, nascimento, apresentacao, perdaEncontro } =
   ilustracoes.misteriosGozosos;
 
 export const misteriosGozosos: TercoDoRosario = {
@@ -55,7 +55,7 @@ export const misteriosGozosos: TercoDoRosario = {
     {
       id: 5,
       titulo: "A perda e o Encontro do Menino Jesus no Templo",
-      imagem: "",
+      imagem: perdaEncontro,
       texto: [
         "Depois de três dias, o encontraram no templo, sentado entre os mestres, ouvindo-os e fazendo-lhes perguntas. Quando o viram, seus pais ficaram muito comovidos, e sua mãe lhe disse:",
         "'Filho, por que agiste assim conosco? Olha, teu pai e eu estávamos angustiados à tua procura.' Ele respondeu: 'Por que me procuráveis? Não sabíeis que devo estar naquilo que é de meu Pai?'",
